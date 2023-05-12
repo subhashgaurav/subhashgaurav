@@ -75,8 +75,8 @@ jobs:
     #- name: Setup Terraform
     #  uses: hashicorp/setup-terraform@v1
 
-    #- name: login command
-    #  run: az login --service-principal -u ${{ secrets.APP }} -p ${{ secrets.SECRET }} --tenant ${{ secrets.TENANT }}
+    - name: login command
+      run: az login --service-principal -u ${{ secrets.APP }} -p ${{ secrets.SECRET }} --tenant ${{ secrets.TENANT }}
 
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
