@@ -6,5 +6,5 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "az-rg-1" {
   name     = "RG-1"
-  location = "West Europe"
+  location = "east us"
 }
