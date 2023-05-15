@@ -5,13 +5,14 @@ provider "azurerm" {
   
 }
 
-module "terraform-azurerm-vNet" {
-    source = "git::https://github.com/subhashgaurav/terraform-azurerm-vNet.git"
-
+module "terraform-azurerm-storage" {
+    source = "git::https://github.com/subhashgaurav/terraform-azurerm-storage.git"
 
     rg_name = "rg-1"
     location = "east us"
-    vNet_name = "vNet-1"
-    subnet_name = "subnet-1"
+    sa_name = "subhash87654321"
+
+
+
 
 }
