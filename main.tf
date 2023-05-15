@@ -5,7 +5,7 @@ provider "azurerm" {
   
 }
 
-module "terraform-azurerm-rg" {
+module "terraform-azurerm-vNet" {
     source = "git::https://github.com/subhashgaurav/terraform-azurerm-vNet.git"
 
     rg_name = "rg-1"
