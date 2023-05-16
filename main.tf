@@ -5,12 +5,18 @@ provider "azurerm" {
   
 }
 
-module "terraform-azurerm-storage" {
-    source = "git::https://github.com/subhashgaurav/terraform-azurerm-storage.git"
+module "terraform-azurerm-vm" {
+    source = "git::https://github.com/subhashgaurav/terraform-azurerm-vm.git"
 
     rg_name = "rg-1"
     location = "east us"
-    sa_name = "subhash87654321"
+    vNet_name = "vNet-1"
+    subnet_name = "subnet-1"
+    pulic_ip_name = "public-ip"
+    nic_name = "nic-1"
+    vm_name = "vm-1"
+    os_disk_name = "os-disk"
+    data_disk_name = "data-disk"
 
 
 
